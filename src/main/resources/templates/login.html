@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Good Thymes Virtual Grocery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- コンパイルして圧縮された最新版の CSS -->
+<link rel="stylesheet"
+	href="../../../../build/webResource/bower_components/bootstrap/dist/css/bootstrap.min.css"
+	th:href="@{/lib/bootstrap/dist/css/bootstrap.min.css}"/>
+
+<!-- オプションのテーマ -->
+<link rel="stylesheet"
+	href="../../../../build/webResource/bower_components/bootstrap/dist/css/bootstrap-theme.min.css"
+	th:href="@{/lib/bootstrap/dist/css/bootstrap-theme.min.css}"/>
+
+<!-- コンパイルして圧縮された最新版の JavaScript -->
+<script
+	src="../../../../build/webResource/bower_components/bootstrap/dist/js/bootstrap.min.js"
+	th:src="@{/lib/bootstrap/dist/js/bootstrap.min.js}"></script>
+
+<script type="text/javascript"
+	src="../../../../build/webResource/bower_components/jquery/dist/jquery.min.js"
+	th:src="@{/lib/jquery/dist/jquery.min.js}"></script>
+
+<link rel="stylesheet" href="../static/css/login.css"
+	th:href="@{/css/login.css}" />
+</head>
+<body>
+	<div class="container-fluid">
+
+		<form class="form-signin" action="/login" th:action="@{/login}" method="post">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<label for="inputCardNo" class="sr-only">Card No</label>
+			<input id="inputCardNo" name="inputCardNo" class="form-control"
+				placeholder="Card No" required="required" autofocus="autofocus" />
+			<label for="inputPassword" class="sr-only">Password</label>
+			<input type="password" id="inputPassword" name="inputPassword" class="form-control"
+				placeholder="Password" required="required" />
+			<div class="checkbox">
+				<label> <input type="checkbox" value="remember-me" />
+					Remember me
+				</label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		</form>
+
+	</div>
+</body>
+</html>

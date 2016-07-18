@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Good Thymes Virtual Grocery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- コンパイルして圧縮された最新版の CSS -->
+<link rel="stylesheet"
+	href="../../../../build/webResource/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+<!-- オプションのテーマ -->
+<link rel="stylesheet"
+	href="../../../../build/webResource/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+
+<!-- コンパイルして圧縮された最新版の JavaScript -->
+<script
+	src="../../../../build/webResource/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"
+	src="../../../../build/webResource/bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+	<!-- navbar -->
+	<div class="row">
+		<nav class="navbar navbar-default navbar-fixed-top">
+
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">Home</a>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="">menu1</a></li>
+				<li><a href="">menu2</a></li>
+				<li><a href="">menu3</a></li>
+				<li><a href="">menu4</a></li>
+			</ul>
+
+		</nav>
+	</div>
+
+	<div class="container">
+
+		<!-- content -->
+		<div class="row" style="padding: 60px 0 0 0">
+			<!-- left -->
+			<div class="col-md-3">
+				<!-- パネルで囲む -->
+				<div class="panel panel-default">
+					<div class="panel-heading">Menu</div>
+					<!-- 敢えてbodyを作らないことで、メニューを詰める -->
+					<!-- <div class="panel-body"> -->
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href=""><i class="glyphicon glyphicon-pencil"></i>
+								submenu1</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-download"></i>
+								submenu2</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-leaf"></i>
+								submenu3</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-folder-open"></i>
+								submenu4</a></li>
+					</ul>
+					<!-- </div> -->
+				</div>
+			</div>
+
+			<!-- center -->
+			<div class="col-md-6" style="background-color: #0ff000">center
+			</div>
+
+			<!-- right -->
+			<div class="col-md-3" style="background-color: #00f0f0">right</div>
+		</div>
+
+	</div>
+</body>
+</html>
